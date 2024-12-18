@@ -1,5 +1,5 @@
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 class Application {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,7 +21,6 @@ class Application {
                     break;
                 case 2:
 
-                    gestionDesApprenants();
                     System.out.println("Vous avez choisi Gestion des Formateurs.");
 
                     break;
@@ -74,7 +73,7 @@ public static void gestionDesApprenants(){
         }
     }
 }
-import java.util.ArrayList
+
     static ArrayList<Apprenant> listeApprenants = new ArrayList<>();
        //hiya lighan5zno fiha ga3 les objet  apprenant  bach n5dmo biha bessohola fe methode
 
@@ -100,6 +99,7 @@ import java.util.ArrayList
 
       System.out.println("Apprenant ajouté ajauté avec : " + nom + " " + prenom);
 
+
   }
   }
 
@@ -107,13 +107,27 @@ private static void afficherApprenants() {
 }
 
 
-    private static void supprimerApprenant() {
+    public static void supprimerApprenant() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrez l'ID de l'Apprenant à supprimer:");
+        int id = scanner.nextInt();// bach i9ra lina les ID
+        boolean trouve = false;
+        for (Apprenant apprenant: listeApprenants )
+            System.out.println("----ID de l'Apprenant à supprimer:---- ");
+
+
+
+
+
+
+
+
+        System.out.println("Apprenant avec l'ID" + id + "supprimé avec succés");
+
     }
 
 
-    private static void ajouterApprenant() {
-    }
 
-}
+
 
    
