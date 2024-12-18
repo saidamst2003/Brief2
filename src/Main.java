@@ -21,7 +21,7 @@ class Application {
                     break;
                 case 2:
 
-
+                    gestionDesApprenants();
                     System.out.println("Vous avez choisi Gestion des Formateurs.");
 
                     break;
@@ -74,15 +74,46 @@ public static void gestionDesApprenants(){
         }
     }
 }
+import java.util.ArrayList
+    static ArrayList<Apprenant> listeApprenants = new ArrayList<>();
+       //hiya lighan5zno fiha ga3 les objet  apprenant  bach n5dmo biha bessohola fe methode
+
+  public static void ajouterApprenant() {
+      Scanner scanner = new Scanner(System.in);
+      System.out.println(" ----ajouter un nouvel apprenant----");
+      System.out.println("ID: ");
+
+      int id = scanner.nextInt();//bach n9raw id dyal les apprenant
+      scanner.nextLine();// bach nesheho 5atae li3ad dernah
+
+      System.out.println("Nom: ");
+      String nom = scanner.nextLine();//  bach n9raw smiya dyal l'apprenant
+
+      System.out.println("prénom: ");
+      String prenom = scanner.nextLine();
+
+      System.out.println("Email: ");
+      String email = scanner.nextLine();
+
+      System.out.println("Téléphone: ");
+      String telephone = scanner.nextLine();
+
+      System.out.println("Apprenant ajouté ajauté avec : " + nom + " " + prenom);
+
+  }
+  }
+
+private static void afficherApprenants() {
+}
+
 
     private static void supprimerApprenant() {
     }
 
-    private static void afficherApprenants() {
-    }
 
     private static void ajouterApprenant() {
     }
 
 }
+
    
